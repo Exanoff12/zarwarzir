@@ -8,10 +8,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: one
         run: |
-          mkdir assets
-          mv logo.png assets
-          mv font.ttf assets
-          mv style.css assets
+          wget https://use.fontawesome.com/releases/v6.2.0/fontawesome-free-6.2.0-web.zip
+          unzip fontawesome-free-6.2.0-web.zip
+          rm -rf assets/custom/css
+          cp fontawesome-free-6.2.0-web/css assets/custom && cp fontawesome-free-6.2.0-web/webfonts assets/custom
+          rm -rf fontawesome-free-6.2.0-web.zip
+          rm -rf fontawesome-free-6.2.0-web
       - name: Commit
         run: |
           git config --global user.name 'github-actions[BOT]'
