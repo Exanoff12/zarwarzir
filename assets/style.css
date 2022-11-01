@@ -1,6 +1,6 @@
 @font-face {
   font-family: "psb";
-  src: url("./font.ttf");
+  src: url("./assets/font.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,10 +30,6 @@ li {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-.promo {
-  text-align: center;
-  color: white;
 }
 .logo {
   width: 300px;
