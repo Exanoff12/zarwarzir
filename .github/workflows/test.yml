@@ -10,8 +10,8 @@ jobs:
         run: |
           wget https://use.fontawesome.com/releases/v6.2.0/fontawesome-free-6.2.0-web.zip
           unzip fontawesome-free-6.2.0-web.zip
-          rm -rf assets/custom/css
-          cp fontawesome-free-6.2.0-web/css assets/custom && cp fontawesome-free-6.2.0-web/webfonts assets/custom
+          mkdir assets/custom/css && mkdir assets/custom/webfonts
+          cp fontawesome-free-6.2.0-web/css/* assets/custom/css/ && cp fontawesome-free-6.2.0-web/webfonts/* assets/custom/webfonts/
           rm -rf fontawesome-free-6.2.0-web.zip
           rm -rf fontawesome-free-6.2.0-web
       - name: Commit
