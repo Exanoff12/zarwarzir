@@ -31,6 +31,10 @@ li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.promo {
+  text-align: center;
+  color: white;
+}
 .logo {
   width: 300px;
   display: block;
